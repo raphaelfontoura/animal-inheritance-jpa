@@ -13,7 +13,7 @@ import java.util.UUID
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "animalType", discriminatorType = DiscriminatorType.STRING)
-open class Animal(
+open class Animal protected constructor(
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     open val id: UUID = UUID.randomUUID(),

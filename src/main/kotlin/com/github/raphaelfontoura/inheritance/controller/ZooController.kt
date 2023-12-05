@@ -1,5 +1,6 @@
 package com.github.raphaelfontoura.inheritance.controller
 
+import com.github.raphaelfontoura.inheritance.model.Animal
 import com.github.raphaelfontoura.inheritance.model.Zoo
 import com.github.raphaelfontoura.inheritance.repository.ZooRepository
 import org.springframework.web.bind.annotation.GetMapping
