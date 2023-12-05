@@ -1,8 +1,11 @@
 package com.github.raphaelfontoura.inheritance.model
 
-import jakarta.persistence.DiscriminatorValue
+import jakarta.persistence.Entity
 
-@DiscriminatorValue(value = "dog")
+@Entity
 class Dog(
-    override val raca: String?,
-) : Animal()
+    val raca: String?,
+) : Animal() {
+
+    override val type = AnimalType.DOG
+}
