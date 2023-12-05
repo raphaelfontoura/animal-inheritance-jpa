@@ -5,5 +5,5 @@ import java.util.UUID
 
 @DiscriminatorValue(value = "cat")
 class Cat(
-    val color: String?,
+    override val cor: String?,
 ) : Animal()

@@ -5,5 +5,5 @@ import java.util.UUID
 
 @DiscriminatorValue(value = "dog")
 class Dog(
-    val raca: String?,
+    override val raca: String?,
 ) : Animal()
